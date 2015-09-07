@@ -23,7 +23,7 @@ def scrape_list(url)
   noko.css('div.info-block div.info-wrap').each do |person|
     data = { 
       id: person.css('a.more-info/@href').text[/rep=(\d+)/, 1],
-      name: person.css('.info .name').text.tidy,
+      name: person.xpath('.//span[@class="info"]//span[@class="name"]/text()').text.split(' - ').first.tidy.sub('Hon. ', ''),
       party: person.css('.info .party').text.tidy,
       area: person.css('.info .district').text.tidy,
       image: person.css('.identity img/@src').text,
