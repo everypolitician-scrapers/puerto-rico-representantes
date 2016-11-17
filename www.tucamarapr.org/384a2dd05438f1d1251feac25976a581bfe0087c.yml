@@ -1,0 +1,47 @@
+---
+request:
+  method: get
+  uri: http://www.tucamarapr.org/dnncamara/web/composiciondelacamara.aspx
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - '*/*'
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Cache-Control:
+    - private
+    Transfer-Encoding:
+    - chunked
+    Content-Type:
+    - text/html; charset=utf-8
+    Vary:
+    - Accept-Encoding
+    Server:
+    - Microsoft-IIS/7.5
+    Set-Cookie:
+    - .ASPXANONYMOUS=Z1mNeHR30gEkAAAAZDcyZTE0MzYtNTA0MS00MzdlLTkxOWUtNTdkNGZmZjNiZDNm0;
+      expires=Thu, 26-Jan-2017 01:35:26 GMT; path=/; HttpOnly
+    - .ASPXANONYMOUS=Z1mNeHR30gEkAAAAZDcyZTE0MzYtNTA0MS00MzdlLTkxOWUtNTdkNGZmZjNiZDNm0;
+      expires=Thu, 26-Jan-2017 01:35:26 GMT; path=/; HttpOnly
+    - ASP.NET_SessionId=4x5smhqwny5mr0cez3aktcho; path=/; HttpOnly
+    - ASP.NET_SessionId=4x5smhqwny5mr0cez3aktcho; path=/; HttpOnly
+    - language=es-PR; path=/; HttpOnly
+    X-Aspnet-Version:
+    - 4.0.30319
+    X-Powered-By:
+    - ASP.NET
+    Date:
+    - Thu, 17 Nov 2016 14:55:27 GMT
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Thu, 17 Nov 2016 14:55:49 GMT
