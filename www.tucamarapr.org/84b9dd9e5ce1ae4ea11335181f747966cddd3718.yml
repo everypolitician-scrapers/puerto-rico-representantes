@@ -1,0 +1,47 @@
+---
+request:
+  method: get
+  uri: http://www.tucamarapr.org/dnncamara/web/ComposiciondelaCamara/biografia.aspx?rep=40
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - '*/*'
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Cache-Control:
+    - private
+    Content-Type:
+    - text/html; charset=utf-8
+    Vary:
+    - Accept-Encoding
+    Server:
+    - Microsoft-IIS/7.5
+    Set-Cookie:
+    - .ASPXANONYMOUS=Fv6SlXV30gEkAAAAYWIzMzE4NWEtMDZhZC00ODUzLWE3Y2ItODY2MjhmMjk2OWI40;
+      expires=Thu, 26-Jan-2017 01:43:25 GMT; path=/; HttpOnly
+    - .ASPXANONYMOUS=Fv6SlXV30gEkAAAAYWIzMzE4NWEtMDZhZC00ODUzLWE3Y2ItODY2MjhmMjk2OWI40;
+      expires=Thu, 26-Jan-2017 01:43:25 GMT; path=/; HttpOnly
+    - ASP.NET_SessionId=hxfva4io515x4iowbx3y5beq; path=/; HttpOnly
+    - ASP.NET_SessionId=hxfva4io515x4iowbx3y5beq; path=/; HttpOnly
+    - language=es-PR; path=/; HttpOnly
+    X-Aspnet-Version:
+    - 4.0.30319
+    X-Powered-By:
+    - ASP.NET
+    Date:
+    - Thu, 17 Nov 2016 15:03:25 GMT
+    Content-Length:
+    - '21934'
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Thu, 17 Nov 2016 15:03:47 GMT
