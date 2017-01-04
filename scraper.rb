@@ -6,8 +6,9 @@ require 'pry'
 require 'scraped'
 require 'scraperwiki'
 
-require 'open-uri/cached'
-OpenURI::Cache.cache_path = '.cache'
+# require 'open-uri/cached'
+# OpenURI::Cache.cache_path = '.cache'
+require 'scraped_page_archive/open-uri'
 
 class String
   def tidy
@@ -72,6 +73,9 @@ def scrape_list(url)
   data = page.members.map(&:to_h)
   # puts data
   ScraperWiki.save_sqlite(%i(id term), data)
+
+  # visit each 'source' page to archive it
+  data.each { |p| open(p[:source]).read }
 end
 
 scrape_list('http://www.tucamarapr.org/dnncamara/web/composiciondelacamara.aspx')
