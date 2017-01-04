@@ -9,7 +9,7 @@ request:
     Accept-Encoding:
     - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
     Accept:
-    - '*/*'
+    - "*/*"
     User-Agent:
     - Ruby
 response:
@@ -26,10 +26,10 @@ response:
     Server:
     - Microsoft-IIS/7.5
     Set-Cookie:
-    - .ASPXANONYMOUS=gUuvIHV30gEkAAAAM2IzMDlkMGItZjQ4Yy00ZjRhLTg2ODctM2Y4OTc2YTU1Njlj0;
-      expires=Thu, 26-Jan-2017 01:40:09 GMT; path=/; HttpOnly
-    - .ASPXANONYMOUS=gUuvIHV30gEkAAAAM2IzMDlkMGItZjQ4Yy00ZjRhLTg2ODctM2Y4OTc2YTU1Njlj0;
-      expires=Thu, 26-Jan-2017 01:40:09 GMT; path=/; HttpOnly
+    - ".ASPXANONYMOUS=gUuvIHV30gEkAAAAM2IzMDlkMGItZjQ4Yy00ZjRhLTg2ODctM2Y4OTc2YTU1Njlj0;
+      expires=Thu, 26-Jan-2017 01:40:09 GMT; path=/; HttpOnly"
+    - ".ASPXANONYMOUS=gUuvIHV30gEkAAAAM2IzMDlkMGItZjQ4Yy00ZjRhLTg2ODctM2Y4OTc2YTU1Njlj0;
+      expires=Thu, 26-Jan-2017 01:40:09 GMT; path=/; HttpOnly"
     - ASP.NET_SessionId=3d12hxnyiaitpxetsgf3cure; path=/; HttpOnly
     - ASP.NET_SessionId=3d12hxnyiaitpxetsgf3cure; path=/; HttpOnly
     - language=es-PR; path=/; HttpOnly
