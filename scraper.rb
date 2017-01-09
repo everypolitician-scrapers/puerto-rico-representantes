@@ -10,12 +10,6 @@ require 'scraperwiki'
 # OpenURI::Cache.cache_path = '.cache'
 require 'scraped_page_archive/open-uri'
 
-class String
-  def tidy
-    gsub(/[[:space:]]+/, ' ').strip
-  end
-end
-
 class MemberDiv < Scraped::HTML
   field :id do
     noko.css('a.more-info/@href').text[/rep=(\d+)/, 1]
