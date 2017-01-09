@@ -32,11 +32,11 @@ class MemberDiv < Scraped::HTML
   end
 
   field :phone do
-    noko.xpath('.//span[@class="data-type" and contains(.,"Tel:")]').map { |n| n.text.sub('Tel:', '').tidy }.join(' / ')
+    noko.xpath('.//span[@class="data-type" and contains(.,"Tel:")]').map { |n| n.text.sub('Tel:', '').tidy }.reject(&:empty?).join(' / ')
   end
 
   field :fax do
-    noko.xpath('.//span[@class="data-type" and contains(.,"Fax:")]').map { |n| n.text.sub('Fax:', '').tidy }.join(' / ')
+    noko.xpath('.//span[@class="data-type" and contains(.,"Fax:")]').map { |n| n.text.sub('Fax:', '').tidy }.reject(&:empty?).join(' / ')
   end
 
   field :contact_form do
