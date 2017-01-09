@@ -62,14 +62,11 @@ class MembersPage < Scraped::HTML
   end
 end
 
-def scrape_list(url)
-  page = MembersPage.new(response: Scraped::Request.new(url: url).response)
-  data = page.members.map(&:to_h)
-  # puts data
-  ScraperWiki.save_sqlite(%i(id term), data)
+start = 'http://www.tucamarapr.org/dnncamara/web/composiciondelacamara.aspx'
+page = MembersPage.new(response: Scraped::Request.new(url: start).response)
+data = page.members.map(&:to_h)
+# puts data
+ScraperWiki.save_sqlite(%i(id term), data)
 
-  # visit each 'source' page to archive it
-  data.each { |p| open(p[:source]).read }
-end
-
-scrape_list('http://www.tucamarapr.org/dnncamara/web/composiciondelacamara.aspx')
+# visit each 'source' page to archive it
+data.each { |p| open(p[:source]).read }
