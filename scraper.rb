@@ -43,10 +43,6 @@ class MemberDiv < Scraped::HTML
     noko.css('a.mail/@href').text
   end
 
-  field :term do
-    29
-  end
-
   field :source do
     noko.css('a.more-info/@href').text
   end
@@ -68,7 +64,7 @@ data = page.members.map(&:to_h)
 # puts data
 
 ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
-ScraperWiki.save_sqlite(%i(id term), data)
+ScraperWiki.save_sqlite(%i(id party area), data)
 
 # visit each 'source' page to archive it
 data.each { |p| open(p[:source]).read }
