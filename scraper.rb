@@ -66,6 +66,8 @@ start = 'http://www.tucamarapr.org/dnncamara/web/composiciondelacamara.aspx'
 page = MembersPage.new(response: Scraped::Request.new(url: start).response)
 data = page.members.map(&:to_h)
 # puts data
+
+ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
 ScraperWiki.save_sqlite(%i(id term), data)
 
 # visit each 'source' page to archive it
