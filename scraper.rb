@@ -63,7 +63,7 @@ page = MembersPage.new(response: Scraped::Request.new(url: start).response)
 data = page.members.map(&:to_h)
 # puts data
 
-ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
+ScraperWiki.sqliteexecute('DROP TABLE data') rescue nil
 ScraperWiki.save_sqlite(%i[id party area], data)
 
 # visit each 'source' page to archive it
