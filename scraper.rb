@@ -58,7 +58,7 @@ class MembersPage < Scraped::HTML
   end
 end
 
-start = 'http://www.tucamarapr.org/dnncamara/web/composiciondelacamara.aspx'
+start = 'http://www.tucamarapr.org/dnncamara/web/ComposiciondelaCamara/Biografia.aspx'
 page = MembersPage.new(response: Scraped::Request.new(url: start).response)
 data = page.members.map(&:to_h)
 data.each { |mem| puts mem.reject { |_, v| v.to_s.empty? }.sort_by { |k, _| k }.to_h } if ENV['MORPH_DEBUG']
