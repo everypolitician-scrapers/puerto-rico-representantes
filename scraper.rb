@@ -12,6 +12,10 @@ require 'scraped_page_archive/open-uri'
 
 require_rel 'lib'
 
+def scrape(h)
+  url, klass = h.to_a.first
+  klass.new(response: Scraped::Request.new(url: url).response)
+end
 
 class MembersPage < Scraped::HTML
   decorator Scraped::Response::Decorator::CleanUrls
@@ -24,12 +28,11 @@ class MembersPage < Scraped::HTML
 end
 
 start = 'http://www.tucamarapr.org/dnncamara/web/ComposiciondelaCamara/Biografia.aspx'
-page = MembersPage.new(response: Scraped::Request.new(url: start).response)
-data = page.members.map(&:to_h)
+page = scrape start => MembersPage
+data = page.members.map do |member|
+  member.to_h.merge((scrape member.source => MemberPage).to_h)
+end
 data.each { |mem| puts mem.reject { |_, v| v.to_s.empty? }.sort_by { |k, _| k }.to_h } if ENV['MORPH_DEBUG']
 
 ScraperWiki.sqliteexecute('DROP TABLE data') rescue nil
 ScraperWiki.save_sqlite(%i[id party area], data)
-
-# visit each 'source' page to archive it
-data.each { |p| open(p[:source]).read }
