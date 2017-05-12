@@ -52,7 +52,7 @@ class MembersPage < Scraped::HTML
   decorator Scraped::Response::Decorator::CleanUrls
 
   field :members do
-    noko.css('div.info-block div.info-wrap').map do |div|
+    noko.css('.list-article .selectionRep').map do |div|
       fragment div => MemberDiv
     end
   end
