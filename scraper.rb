@@ -61,7 +61,7 @@ end
 start = 'http://www.tucamarapr.org/dnncamara/web/composiciondelacamara.aspx'
 page = MembersPage.new(response: Scraped::Request.new(url: start).response)
 data = page.members.map(&:to_h)
-# puts data
+data.each { |mem| puts mem.reject { |_, v| v.to_s.empty? }.sort_by { |k, _| k }.to_h } if ENV['MORPH_DEBUG']
 
 ScraperWiki.sqliteexecute('DROP TABLE data') rescue nil
 ScraperWiki.save_sqlite(%i[id party area], data)
