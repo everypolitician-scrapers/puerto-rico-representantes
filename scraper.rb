@@ -17,16 +17,6 @@ def scrape(h)
   klass.new(response: Scraped::Request.new(url: url).response)
 end
 
-class MembersPage < Scraped::HTML
-  decorator Scraped::Response::Decorator::CleanUrls
-
-  field :members do
-    noko.css('.list-article .selectionRep').map do |div|
-      fragment div => MemberDiv
-    end
-  end
-end
-
 start = 'http://www.tucamarapr.org/dnncamara/web/ComposiciondelaCamara/Biografia.aspx'
 page = scrape start => MembersPage
 data = page.members.map do |member|
