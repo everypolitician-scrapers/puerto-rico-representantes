@@ -49,7 +49,7 @@ class MemberDiv < Scraped::HTML
 end
 
 class MembersPage < Scraped::HTML
-  decorator Scraped::Response::Decorator::AbsoluteUrls
+  decorator Scraped::Response::Decorator::CleanUrls
 
   field :members do
     noko.css('div.info-block div.info-wrap').map do |div|
