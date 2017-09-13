@@ -26,22 +26,22 @@ response:
     Server:
     - Microsoft-IIS/7.5
     Set-Cookie:
-    - ".ASPXANONYMOUS=X8-L5Z5i0wEkAAAAYzkxZjcwNGMtMWVkZS00MmIzLThhMDctNmQyNGZjNWQ1NDc50;
-      expires=Tue, 21-Nov-2017 08:01:11 GMT; path=/; HttpOnly"
-    - ".ASPXANONYMOUS=X8-L5Z5i0wEkAAAAYzkxZjcwNGMtMWVkZS00MmIzLThhMDctNmQyNGZjNWQ1NDc50;
-      expires=Tue, 21-Nov-2017 08:01:11 GMT; path=/; HttpOnly"
-    - ASP.NET_SessionId=x1ngf4u5n5l33eyogieffppu; path=/; HttpOnly
-    - ASP.NET_SessionId=x1ngf4u5n5l33eyogieffppu; path=/; HttpOnly
+    - ".ASPXANONYMOUS=93aPUuNi0wEkAAAAMTVkNWM0YTEtODhhZi00ZGJjLWI4ZjMtZDdlMzU5Y2MzNzZm0;
+      expires=Tue, 21-Nov-2017 16:11:00 GMT; path=/; HttpOnly"
+    - ".ASPXANONYMOUS=93aPUuNi0wEkAAAAMTVkNWM0YTEtODhhZi00ZGJjLWI4ZjMtZDdlMzU5Y2MzNzZm0;
+      expires=Tue, 21-Nov-2017 16:11:00 GMT; path=/; HttpOnly"
+    - ASP.NET_SessionId=x5klk2ionp2xtbflwmfqfoeg; path=/; HttpOnly
+    - ASP.NET_SessionId=x5klk2ionp2xtbflwmfqfoeg; path=/; HttpOnly
     - language=es-PR; path=/; HttpOnly
     X-Aspnet-Version:
     - 4.0.30319
     X-Powered-By:
     - ASP.NET
     Date:
-    - Tue, 12 Sep 2017 21:21:12 GMT
+    - Wed, 13 Sep 2017 05:31:00 GMT
     Content-Length:
-    - '27225'
+    - '26268'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Tue, 12 Sep 2017 21:21:25 GMT
+recorded_at: Wed, 13 Sep 2017 05:31:15 GMT
