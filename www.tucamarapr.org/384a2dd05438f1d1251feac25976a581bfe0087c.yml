@@ -28,16 +28,16 @@ response:
     X-Aspnet-Version:
     - 4.0.30319
     Set-Cookie:
-    - ".ASPXANONYMOUS=7F6Cw4fG1AEkAAAAYzVmODNhM2YtMmQxNS00NzlhLTk3NjEtMjEzZmU1NWU4YTc10;
-      expires=Sun, 17-Feb-2019 06:12:30 GMT; path=/; HttpOnly"
+    - ".ASPXANONYMOUS=RArLgrDG1AEkAAAAN2FlMzY3NjctMzQ2YS00MGYzLThjNzgtZDU5NjJjZDU4NDU30;
+      expires=Sun, 17-Feb-2019 11:04:11 GMT; path=/; HttpOnly"
     - language=es-PR; path=/; HttpOnly
     X-Powered-By:
     - ASP.NET
     Date:
-    - Sun, 09 Dec 2018 19:32:30 GMT
+    - Mon, 10 Dec 2018 00:24:11 GMT
     Content-Length:
     - '168'
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Sun, 09 Dec 2018 19:32:30 GMT
+recorded_at: Mon, 10 Dec 2018 00:24:11 GMT
