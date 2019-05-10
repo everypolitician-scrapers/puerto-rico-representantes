@@ -25,19 +25,23 @@ response:
     - http://www.tucamarapr.org/dnncamara/web/Inicio.aspx
     Server:
     - Microsoft-IIS/10.0
+    Set-Cookie:
+    - ".ASPXANONYMOUS=aRll-OQ91QEkAAAAZjUzYmJhZGUtNmIzMy00ZWViLWFiYjEtZDQ5MTAxM2ZkNTRk0;
+      expires=Fri, 19-Jul-2019 03:49:30 GMT; path=/; HttpOnly"
+    - ".ASPXANONYMOUS=aRll-OQ91QEkAAAAZjUzYmJhZGUtNmIzMy00ZWViLWFiYjEtZDQ5MTAxM2ZkNTRk0;
+      expires=Fri, 19-Jul-2019 03:49:30 GMT; path=/; HttpOnly"
+    - ASP.NET_SessionId=mjnv2pwaieuogkh4p0lcmwt0; path=/; HttpOnly
+    - ASP.NET_SessionId=mjnv2pwaieuogkh4p0lcmwt0; path=/; HttpOnly
+    - language=es-PR; path=/; HttpOnly
     X-Aspnet-Version:
     - 4.0.30319
-    Set-Cookie:
-    - ".ASPXANONYMOUS=j3eknSM91QEkAAAAYTE2ZWY3MzEtMDI5YS00MWQzLTkyNWUtY2Y2YmI1YTE4NDIy0;
-      expires=Thu, 18-Jul-2019 04:45:25 GMT; path=/; HttpOnly"
-    - language=es-PR; path=/; HttpOnly
     X-Powered-By:
     - ASP.NET
     Date:
-    - Thu, 09 May 2019 18:05:25 GMT
+    - Fri, 10 May 2019 17:09:29 GMT
     Content-Length:
     - '168'
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Thu, 09 May 2019 18:05:25 GMT
+recorded_at: Fri, 10 May 2019 17:09:30 GMT
